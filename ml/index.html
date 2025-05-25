@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mental Health Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #06616d;
+      color: rgb(244, 233, 233);
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      background: #dcd7d7;
+      padding: 20px;
+      max-width: 850px;
+      margin: 20px auto;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .question-section {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    button {
+      background: #047193;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background: #0b3d83;
+    }
+    #result {
+      background: #e6f7ff;
+      border-left: 5px solid #075962;
+      padding: 15px;
+      margin-top: 25px;
+      border-radius: 4px;
+    }
+    footer {
+      background: #e9ecef;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 15px 0 0;
+  background: #003845; /* Old background color */
+  border-radius: 5px;
+}
+
+nav a {
+  color: #fefefe;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #0a9396;
+  border-radius: 3px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mental Health Self-Assessment</h1>
+    <nav>
+        <ul>
+          <li><a href="#anxiety">Anxiety</a></li>
+          <li><a href="#emotional-disorder">Emotional-disorder</a></li>
+          <li><a href="#bipolar">Bipolar</a></li>
+          <li><a href="#depression">Depression</a></li>
+          <li><a href="#dissociation">Dissociation</a></li>
+          <li><a href="#eating-disorder">Eating-disorder</a></li>
+          <li><a href="#ocd">OCD</a></li>
+          <li><a href="#paranoia">Paranoia</a></li>
+          <li><a href="#ptsd">PTSD</a></li>
+          <li><a href="#psychosis">Psychosis</a></li>
+          <li><a href="#schizophrenia">Schizophrenia</a></li>
+        </ul>
+      </nav>
+  
+  </header>
+ <!-- Disorders Sections (Shortened for brevity; expand as needed) -->
+ <section id="anxiety">
+    <h2>Anxiety Disorders</h2>
+    <p>Excessive worry, restlessness, and panic attacks.</p>
+  </section>
+  <section id="emotional-disorder">
+    <h2>Behavioral and Emotional Disorders in Children</h2>
+    <p>Includes ADHD, ODD, anxiety. Early intervention is key.</p>
+  </section>
+  <section id="bipolar">
+    <h2>Bipolar Affective Disorder</h2>
+    <p>Extreme mood swings between highs (mania) and lows (depression).</p>
+  </section>
+  <section id="depression">
+    <h2>Depression</h2>
+    <p>Persistent sadness, fatigue, and lack of interest.</p>
+  </section>
+  <section id="dissociation">
+    <h2>Dissociative Disorders</h2>
+    <p>Disconnection between thoughts, identity, and memory.</p>
+  </section>
+  <section id="eating-disorder">
+    <h2>Eating Disorders</h2>
+    <p>Anorexia, bulimia, binge eating—emotional and physical health risks.</p>
+  </section>
+  <section id="ocd">
+    <h2>Obsessive Compulsive Disorder</h2>
+    <p>Intrusive thoughts and repetitive behaviors or rituals.</p>
+  </section>
+  <section id="paranoia">
+    <h2>Paranoia</h2>
+    <p>Persistent distrust or suspicion of others without reason.</p>
+  </section>
+  <section id="ptsd">
+    <h2>Post-Traumatic Stress Disorder</h2>
+    <p>Trauma-induced flashbacks, avoidance, and hyperarousal.</p>
+</section>
+<section id="psychosis">
+  <h2>Psychosis</h2>
+  <p>Hallucinations, delusions, and distorted thinking.</p>
+</section>
+<section id="schizophrenia">
+  <h2>Schizophrenia</h2>
+  <p>Chronic disorder with hallucinations, delusions, and disordered thinking.</p>
+</section>
+
+  <section>
+    <form id="quizForm">
+      <p><strong>Answer honestly. This quiz is not a diagnosis but may help you recognize signs of mental health challenges.</strong></p>
+
+      <!-- Anxiety -->
+      <div class="question-section">
+        <label>1. Do you often feel nervous or on edge?</label>
+        <input type="radio" name="q1" value="anxiety"> Yes
+        <input type="radio" name="q1" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>2. Do you avoid places or situations because they make you anxious?</label>
+        <input type="radio" name="q2" value="anxiety"> Yes
+        <input type="radio" name="q2" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>3. Do you experience rapid heartbeat, sweating, or trembling without physical exertion?</label>
+        <input type="radio" name="q3" value="anxiety"> Yes
+        <input type="radio" name="q3" value="none"> No
+      </div>
+
+      <!-- Bipolar -->
+      <div class="question-section">
+        <label>4. Do you have periods of extreme happiness or excitement with little sleep?</label>
+        <input type="radio" name="q4" value="bipolar"> Yes
+        <input type="radio" name="q4" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>5. Do you spend excessively or engage in risky behaviors during high moods?</label>
+        <input type="radio" name="q5" value="bipolar"> Yes
+        <input type="radio" name="q5" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>6. Do your mood swings disrupt work, school, or relationships?</label>
+        <input type="radio" name="q6" value="bipolar"> Yes
+        <input type="radio" name="q6" value="none"> No
+      </div>
+
+      <!-- Depression -->
+      <div class="question-section">
+        <label>7. Have you felt persistently sad or empty for weeks?</label>
+        <input type="radio" name="q7" value="depression"> Yes
+        <input type="radio" name="q7" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>8. Do you struggle to find pleasure in activities you once enjoyed?</label>
+        <input type="radio" name="q8" value="depression"> Yes
+        <input type="radio" name="q8" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>9. Have you noticed changes in appetite, weight, or sleep?</label>
+        <input type="radio" name="q9" value="depression"> Yes
+        <input type="radio" name="q9" value="none"> No
+      </div>
+
+      <!-- OCD -->
+      <div class="question-section">
+        <label>10. Do you experience intrusive thoughts that are hard to control?</label>
+        <input type="radio" name="q10" value="ocd"> Yes
+        <input type="radio" name="q10" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>11. Do you feel the need to perform rituals or checks repeatedly?</label>
+        <input type="radio" name="q11" value="ocd"> Yes
+        <input type="radio" name="q11" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>12. Do you get upset if routines or order are disrupted?</label>
+        <input type="radio" name="q12" value="ocd"> Yes
+        <input type="radio" name="q12" value="none"> No
+      </div>
+
+      <!-- PTSD -->
+      <div class="question-section">
+        <label>13. Have you experienced a traumatic event that you can't stop thinking about?</label>
+        <input type="radio" name="q13" value="ptsd"> Yes
+        <input type="radio" name="q13" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>14. Do you avoid reminders of a past traumatic experience?</label>
+        <input type="radio" name="q14" value="ptsd"> Yes
+        <input type="radio" name="q14" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>15. Do you feel hyper-alert, jumpy, or irritable often?</label>
+        <input type="radio" name="q15" value="ptsd"> Yes
+        <input type="radio" name="q15" value="none"> No
+      </div>
+
+      <!-- Psychosis / Schizophrenia -->
+      <div class="question-section">
+        <label>16. Do you see or hear things that aren’t real?</label>
+        <input type="radio" name="q16" value="psychosis"> Yes
+        <input type="radio" name="q16" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>17. Do you feel others are watching, plotting, or out to get you?</label>
+        <input type="radio" name="q17" value="psychosis"> Yes
+        <input type="radio" name="q17" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>18. Do your thoughts feel jumbled, racing, or out of control?</label>
+        <input type="radio" name="q18" value="psychosis"> Yes
+        <input type="radio" name="q18" value="none"> No
+      </div>
+
+      <!-- General -->
+      <div class="question-section">
+        <label>19. Do you find it hard to concentrate or remember things lately?</label>
+        <input type="radio" name="q19" value="depression"> Yes
+        <input type="radio" name="q19" value="none"> No
+      </div>
+      <div class="question-section">
+        <label>20. Have you thought about harming yourself or ending your life?</label>
+        <input type="radio" name="q20" value="depression"> Yes
+        <input type="radio" name="q20" value="none"> No
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <p>This is not a diagnostic tool. Please consult a licensed professional for help.</p>
+  </footer>
+
+  <script>
+    function submitQuiz() {
+      const formData = new FormData(document.getElementById('quizForm'));
+      const scores = {};
+
+      for (const [_, value] of formData.entries()) {
+        if (value !== 'none') {
+          scores[value] = (scores[value] || 0) + 1;
+        }
+      }
+
+      const sorted = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+      const top = sorted[0];
+
+      const info = {
+        anxiety: {
+          name: "Anxiety Disorder",
+          desc: "You may be experiencing intense worry or fear.",
+          tips: "Try grounding exercises, reduce stimulants, and talk to a therapist."
+        },
+        bipolar: {
+          name: "Bipolar Disorder",
+          desc: "Extreme highs and lows in mood or energy.",
+          tips: "Establish a daily routine, track mood, consult a psychiatrist."
+        },
+        depression: {
+          name: "Depression",
+          desc: "Persistent sadness, fatigue, or thoughts of hopelessness.",
+          tips: "Stay connected, exercise, and seek help from a counselor."
+        },
+        ocd: {
+          name: "Obsessive-Compulsive Disorder",
+          desc: "Compulsions or intrusive thoughts disrupting life.",
+          tips: "Consider CBT and exposure therapy. Reduce stress."
+        },
+        ptsd: {
+          name: "Post-Traumatic Stress Disorder",
+          desc: "Flashbacks, nightmares, and avoidance behaviors.",
+          tips: "Seek trauma-focused therapy (like EMDR)."
+        },
+        psychosis: {
+          name: "Psychosis/Schizophrenia",
+          desc: "Disconnection from reality, hallucinations, or delusions.",
+          tips: "Immediate professional care and long-term treatment are important."
+        }
+      };
+
+      const resultBox = document.getElementById("result");
+
+      if (top) {
+        const result = info[top[0]];
+        resultBox.innerHTML = `
+          <h3>Possible Concern: ${result.name}</h3>
+          <p><strong>Description:</strong> ${result.desc}</p>
+          <p><strong>Tips:</strong> ${result.tips}</p>
+          <p><em>This quiz is a screening tool. For diagnosis and treatment, consult a mental health professional.</em></p>
+        `;
+      } else {
+        resultBox.innerHTML = "<p>Please answer at least one question.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
