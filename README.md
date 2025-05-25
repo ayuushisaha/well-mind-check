@@ -1,4 +1,4 @@
-# Mental Health Self-Assessment Quiz
+# Well-Mind-Check
 
 A simple web quiz to help recognize signs of mental health challenges like Anxiety, Depression, Bipolar, OCD, PTSD, and Psychosis.
 
